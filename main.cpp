@@ -142,11 +142,11 @@ int main() {
     std::cout << std::endl;
 
     std::pair<int, int> start = findStart(maze);
-    std ::cout << "Start position: " << start.first << ", " << start.second << std::endl;
+    std ::cout << "Start position: (" << start.first << ", " << start.second << ")" << std::endl;
     std::cout << std::endl;
 
     std::pair<int, int> target = findTarget(maze);
-    std ::cout << "Target position: " << target.first << ", " << target.second << std::endl;
+    std ::cout << "Target position: (" << target.first << ", " << target.second << ")" << std::endl;
     std::cout << std::endl;
 
     std::stack<std::pair<int, int>> path = findPath(maze, start, target);
